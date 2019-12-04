@@ -1,0 +1,46 @@
+@import "partials/variables";
+@import "partials/mixins";
+@include google-font("Inconsolata");
+@include google-font("Roboto+Mono");
+
+body {
+    font-family: "Roboto+Mono", monospace;
+    background-color: $dark-blue;
+    color: $beige;
+    line-height: 2;
+    font-size: 1rem;
+    margin: 40px 80px;
+}
+
+h1 {
+    font:"Inconsolata" ;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 30px 0;
+    display: block;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.banner {
+    height: 500px;
+    width: auto;
+}
+
+li {
+    color: $beige;
+}
+
+.link {
+    @include linx($light-purple, $light-purple, $yellow, $light-purple);
+}
+
+.link_article_title {
+    @include linx($light-purple, $light-purple, $yellow, $light-purple);
+}
+
